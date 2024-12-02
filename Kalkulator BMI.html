@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styles.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kalkulator BMI</h1>
+        </header>
+
+        <main>
+            <div class="bmi-container">
+                <section class="form-section">
+                    <h2>Input Data</h2>
+                    <form id="bmi-form">
+                        <div class="form-group">
+                            <label for="berat-badan">Berat Badan (kg)</label>
+                            <input type="number" id="berat-badan" name="berat-badan" placeholder="Masukkan berat badan">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tinggi-badan">Tinggi Badan (cm)</label>
+                            <input type="number" id="tinggi-badan" name="tinggi-badan" placeholder="Masukkan tinggi badan">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="usia">Usia (tahun)</label>
+                            <input type="number" id="usia" name="usia" placeholder="Masukkan usia">
+                        </div>
+
+                        <div class="button-group">
+                            <button type="button" id="hitung-bmi">Hitung BMI</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="result-section">
+                    <h2>Hasil Perhitungan</h2>
+                    <div id="result" class="result-display">
+                        <p class="bmi-value" id="bmi-value">-</p>
+                        <p class="bmi-category" id="bmi-category">Belum Dihitung</p>
+                        <p class="bmi-description" id="bmi-description">Silakan masukkan data Anda</p>
+                    </div>
+                </section>
+            </div>
+
+            <section class="info-section">
+                <h3>Kategori BMI</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Rentang BMI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kekurangan Berat Badan</td>
+                            <td>< 18.5</td>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td>18.5 - 24.9</td>
+                        </tr>
+                        <tr>
+                            <td>Kelebihan Berat Badan</td>
+                            <td>25 - 29.9</td>
+                        </tr>
+                        <tr>
+                            <td>Obesitas</td>
+                            <td>> 30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Kalkulator BMI. Konsultasikan dengan profesional kesehatan.</p>
+        </footer>
+    </div>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
